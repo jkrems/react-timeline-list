@@ -13,6 +13,7 @@
     "url": "https://github.com/jkrems/react-timeline-list/issues"
   },
   "scripts": {
+    "start": "webpack-dev-server --inline --start",
     "pretest": "eslint lib test",
     "test": "mocha",
     "posttest": "nlm verify"
@@ -24,13 +25,25 @@
       ]
     }
   },
-  "dependencies": {},
+  "dependencies": {
+    "react": "^0.14.7"
+  },
   "devDependencies": {
     "assertive": "^2.0.0",
+    "babel-cli": "^6.4.5",
+    "babel-core": "^6.4.5",
+    "babel-loader": "^6.2.1",
+    "babel-preset-es2015": "^6.3.13",
+    "babel-preset-react": "^6.3.13",
+    "babel-register": "^6.4.3",
     "eslint": "^1.0.0",
     "eslint-config-groupon": "^2.0.0",
     "mocha": "^2.0.0",
-    "nlm": "^2.0.0"
+    "nlm": "^2.0.0",
+    "react-dom": "^0.14.7",
+    "react-hot-loader": "^1.3.0",
+    "webpack": "^1.12.12",
+    "webpack-dev-server": "^1.14.1"
   },
   "author": {
     "name": "Jan Krems",

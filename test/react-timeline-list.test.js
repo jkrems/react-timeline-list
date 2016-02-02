@@ -1,10 +1,10 @@
-'use strict';
-var assert = require('assertive');
+import assert from 'assertive';
 
-var reactTimelineList = require('../');
+import ReactTimeList from '../';
 
-describe('react-timeline-list', function () {
-  it('is empty', function () {
-    assert.deepEqual({}, reactTimelineList);
+describe('ReactTimeList', function () {
+  it('has a render method', function () {
+    const list = new ReactTimeList();
+    assert.hasType(Function, list.render);
   });
 });
